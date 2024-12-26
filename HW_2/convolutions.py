@@ -49,6 +49,20 @@ def zero_pad(image: np.ndarray, pad_height: int, pad_width: int) -> np.ndarray:
 
     return out
 
+def conv_fast(image, kernel):
+    Hi, Wi = image.shape
+    Hk, Wk = kernel.shape
+    out = np.zeros((Hi, Wi))
+
+    img_pad = zero_pad(image, Hk // 2, Wk // 2)
+    kernel = np.flip(kernel)
+
+    for i in range(Hi):
+        for j in range(Wi):
+            out[i, j] = np.sum(img_pad[i:i + Hk, j:j + Wk] * kernel)
+
+    return out
+
 def save_image(image: np.ndarray, file_path: str):
     cv2.imwrite(file_path, image)
 
@@ -148,7 +162,6 @@ plt.show()
 save_image(padded_img, 'HW_2/img/padded_dog_output.jpg')
 
 # Сравнение времени выполнения двух реализаций свертки
-from filters import conv_fast
 
 t0 = time()
 out_fast = conv_fast(img, kernel)

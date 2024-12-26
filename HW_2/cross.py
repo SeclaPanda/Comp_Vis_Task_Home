@@ -170,7 +170,6 @@ plt.show()
 save_image(img_dark, 'HW_2\\img\\shelf_dark_result.jpg')
 
 # Нормализованная кросс-корреляция с использованием внешней функции
-#from filters import normalized_cross_correlation
 
 out = normalized_cross_correlation(img_dark_grey, temp_grey)
 y, x = np.unravel_index(out.argmax(), out.shape)

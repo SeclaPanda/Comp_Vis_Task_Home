@@ -19,18 +19,18 @@
 
 # *Интерфейс*
 
-![главный экран](term_paper\screenshot\main_page.png)
+![главный экран](https://github.com/SeclaPanda/Comp_Vis_Task_Home/blob/main/term_paper/screenshot/main_page.png)
 
 
 # *Детекция на видео*
-![видео](term_paper\screenshot\video.png)
+![видео](https://github.com/SeclaPanda/Comp_Vis_Task_Home/blob/main/term_paper/screenshot/video.png)
 
 # *Детекция на фото*
 
-![пингвин](term_paper/screenshot/ready.png)
+![пингвин](https://github.com/SeclaPanda/Comp_Vis_Task_Home/blob/main/term_paper/screenshot/ready.png)
 
 # *Детекция на фото с слишком большим кол-вом объектов (шумным)*
 
-![пингвин](term_paper/screenshot/noise.png)
+![пингвин](https://github.com/SeclaPanda/Comp_Vis_Task_Home/blob/main/term_paper/screenshot/noise.png)
 
 
